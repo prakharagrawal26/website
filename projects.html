@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Prakhar Agrawal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header id="header">
+        <nav class="container">
+            <a href="index.html" class="logo">Prakhar Agrawal</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+             <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects-all" class="section-padding page-title-section">
+            <div class="container">
+                <h1 class="page-title">My Projects</h1>
+                 <p class="page-subtitle">A collection of projects showcasing my skills in Data Science, Machine Learning, HPC, and Software Development.</p>
+                <p class="text-center">More projects and code available on <a href="https://github.com/prakharagrawal26/" target="_blank" rel="noopener noreferrer">my GitHub profile <i class="fab fa-github"></i></a>.</p>
+
+                <div class="projects-grid-full">
+                    <!-- Project 1: LLM Viz -->
+                    <div class="project-card-full" id="project-llm">
+                        <div class="card-content">
+                            <h3>LLM-Powered Data Visualization System</h3>
+                            <span class="project-date">Oct 2024 - Nov 2024</span>
+                            <p>Developed an end-to-end pipeline using a fine-tuned LLM (QLoRA) to load, filter, process, and visualize global climate/geophysical data based on natural language requests. Built a query routing system converting natural language to structured JSON commands for custom plotting tools. Incorporated robust resource management and error handling.</p>
+                            <p><strong>Technologies:</strong> Python, LLMs (Fine-tuning, QLoRA), NLP, Data Visualization (Matplotlib/Seaborn), JSON, Data Pipelines, Error Handling.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-small"><i class="fab fa-github"></i> GitHub Repo</a>
+                            <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-small"><i class="fas fa-link"></i> Live Demo</a> -->
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Dipole Prediction -->
+                    <div class="project-card-full" id="project-dipole">
+                        <div class="card-content">
+                            <h3>Predicting Dipole-Multipole Transitions using Machine Learning</h3>
+                             <!-- <span class="project-date">Date Placeholder</span> -->
+                            <p>Applied Machine Learning models (Support Vector Machines, LSTMs) to predict magnetic field dipole-multipole transitions from simulation Axial Dipole Moment (ADM) time series data. Addressed significant class imbalance challenges inherent in rare event prediction and evaluated model predictability and limitations due to data constraints.</p>
+                            <p><strong>Technologies:</strong> Python, Scikit-learn (SVM), TensorFlow/Keras (LSTM), Time Series Analysis, Class Imbalance Techniques, Data Analysis.</p>
+                        </div>
+                         <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-small"><i class="fab fa-github"></i> GitHub Repo</a>
+                        </div>
+                    </div>
+
+                     <!-- Project 3: Intrusion Detection -->
+                    <div class="project-card-full" id="project-intrusion">
+                         <div class="card-content">
+                            <h3>Intrusion Detection Pipeline (CIC-IDS2017 Dataset)</h3>
+                             <!-- <span class="project-date">Date Placeholder</span> -->
+                            <p>Engineered an end-to-end ML pipeline for multi-class network intrusion detection using the CIC-IDS2017 dataset. Implemented robust data cleaning, exploratory data analysis (EDA), feature engineering, dimensionality reduction (PCA), and model training (e.g., RandomForest, Neural Networks), achieving high F1 and ROC AUC scores through effective management of class imbalance.</p>
+                            <p><strong>Technologies:</strong> Python, Pandas, NumPy, Scikit-learn, TensorFlow/Keras, Matplotlib, Seaborn, PCA, Data Cleaning, Feature Engineering, Class Imbalance Handling.</p>
+                         </div>
+                         <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-small"><i class="fab fa-github"></i> GitHub Repo</a>
+                        </div>
+                    </div>
+
+                     <!-- Project 4: Stratification Dynamo -->
+                     <div class="project-card-full" id="project-stratification">
+                        <div class="card-content">
+                            <h3>Role of stratification on dipolar planetary magnetic fields (HPC)</h3>
+                            <span class="project-date">Nov 2023 - Present</span>
+                            <p>Investigated the effect of density variation (stratification) on dipolar magnetic field generation using large-scale anelastic dynamo simulations. Implemented and optimized hybrid MPI/OpenMP parallelism in Fortran/C++ code, achieving a 50% reduction in computational time on HPC clusters. Analyzed results showing loss of dipolarity at strong stratifications.</p>
+                            <p><strong>Technologies:</strong> Fortran, C++, MPI, OpenMP, HPC, Supercomputing, Numerical Modeling, Data Analysis (Python/MATLAB), Scientific Visualization.</p>
+                        </div>
+                         <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-small"><i class="fab fa-github"></i> GitHub Repo</a>
+                        </div>
+                    </div>
+
+                     <!-- Project 5: GPU Dynamo -->
+                     <div class="project-card-full" id="project-gpu-dynamo">
+                        <div class="card-content">
+                            <h3>GPU-Accelerated Dynamo Simulation in Python</h3>
+                            <span class="project-date">Dec 2024 - Jan 2025</span>
+                            <p>Developed a GPU-accelerated solver using CUDA-enabled CuPy for kinematic dynamo simulations, achieving a 10x speedup compared to the CPU implementation. Applied pseudo-spectral methods with FFT-based time integration for numerical stability. Analyzed results through energy spectra and 3D visualizations.</p>
+                            <p><strong>Technologies:</strong> Python, CuPy, CUDA, GPU Computing, NumPy, SciPy, Matplotlib, Numerical Methods, Performance Optimization.</p>
+                        </div>
+                         <div class="project-links">
+                           <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-small"><i class="fab fa-github"></i> GitHub Repo</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: MHD Wave Analysis -->
+                    <div class="project-card-full" id="project-mhd-wave">
+                        <div class="card-content">
+                             <h3>MHD Wave Analysis using Parallel Python (MPI)</h3>
+                             <span class="project-date">May 2023 - Jul 2023</span>
+                            <p>Developed a distributed parallel numerical scheme using mpi4py to analyze Magnetohydrodynamic (MHD) wave propagation by solving an initial value problem. Implemented complex numerical computations involving root-finding and time evolution integrals with NumPy/SciPy. Utilized MPI's collective communication (comm.reduce) for efficient data aggregation.</p>
+                            <p><strong>Technologies:</strong> Python, mpi4py, MPI, NumPy, SciPy, Parallel Computing, Numerical Integration.</p>
+                         </div>
+                         <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-small"><i class="fab fa-github"></i> GitHub Repo</a>
+                        </div>
+                    </div>
+
+                     <!-- Project 7: C++ MHD Solver -->
+                    <div class="project-card-full" id="project-cpp-solver">
+                        <div class="card-content">
+                            <h3>Onset of Magneto-convection using C++ MHD Solver</h3>
+                            <span class="project-date">Oct 2022 - Mar 2023</span>
+                            <p>Developed a high-performance C++ simulation suite to analyze Magnetohydrodynamic (MHD) convection onset using Chebyshev collocation methods. Implemented efficient sparse matrix assembly (Eigen library) for discretized PDEs and solved generalized eigenvalue problems (Spectra library) using shift-and-invert Arnoldi. Leveraged OpenMP for parallel parameter sweeps.</p>
+                            <p><strong>Technologies:</strong> C++, OpenMP, Eigen Library, Spectra Library, Numerical Methods, Sparse Matrices, Eigenvalue Problems, HPC, Performance Optimization.</p>
+                        </div>
+                         <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-small"><i class="fab fa-github"></i> GitHub Repo</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 8: Spark Wikipedia -->
+                    <div class="project-card-full" id="project-spark-wiki">
+                         <div class="card-content">
+                             <h3>Wikipedia Pageviews Analysis using PySpark</h3>
+                            <span class="project-date">Sep 2022 - Oct 2022</span>
+                            <p>Processed ~1GB of hourly Wikipedia pageview data on a local Spark cluster using PySpark. Leveraged SparkSQL, RDDs, caching, and partitioning techniques to efficiently analyze traffic trends, identify top projects/pages, and discover trending topics. Visualized key insights using Matplotlib.</p>
+                            <p><strong>Technologies:</strong> Python, PySpark, Apache Spark, SparkSQL, RDDs, Data Processing, Big Data Concepts, Matplotlib.</p>
+                         </div>
+                         <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-small"><i class="fab fa-github"></i> GitHub Repo</a>
+                        </div>
+                    </div>
+
+                    <!-- Add more project cards as needed, following the pattern -->
+                    <!-- Example Placeholder
+                    <div class="project-card-full" id="project-placeholder-9">
+                        <div class="card-content">
+                             <h3>Placeholder Project 9</h3>
+                             <span class="project-date">Date</span>
+                             <p>Description of the project goes here.</p>
+                             <p><strong>Technologies:</strong> Tech A, Tech B, Tech C</p>
+                        </div>
+                         <div class="project-links">
+                             <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-small"><i class="fab fa-github"></i> GitHub Repo</a>
+                         </div>
+                    </div>
+                    -->
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <footer>
+        <div class="container">
+             <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/prakhar-agr/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/prakharagrawal26/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:aprakhar@iisc.ac.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p>© <span id="current-year"></span> Prakhar Agrawal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

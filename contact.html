@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Prakhar Agrawal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header id="header">
+        <nav class="container">
+             <a href="index.html" class="logo">Prakhar Agrawal</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+             <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+         <section id="contact-page" class="section-padding page-title-section">
+            <div class="container">
+                <h1 class="page-title">Get In Touch</h1>
+                <p class="page-subtitle">I'm always open to discussing new projects, collaborations, or opportunities.</p>
+
+                <div class="contact-options">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope fa-3x contact-icon"></i>
+                        <h3>Email</h3>
+                        <p>The best way to reach me for professional inquiries.</p>
+                        <a href="mailto:aprakhar@iisc.ac.in" class="contact-link">aprakhar@iisc.ac.in</a>
+                         <a href="mailto:prakharagrawal2697@gmail.com" class="contact-link alt">(prakharagrawal2697@gmail.com)</a>
+                    </div>
+
+                     <div class="contact-card">
+                        <i class="fab fa-linkedin fa-3x contact-icon"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me on LinkedIn for professional networking.</p>
+                        <a href="https://www.linkedin.com/in/prakhar-agr/" target="_blank" rel="noopener noreferrer" class="contact-link">linkedin.com/in/prakhar-agr</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fab fa-github fa-3x contact-icon"></i>
+                        <h3>GitHub</h3>
+                        <p>Explore my projects and code repositories.</p>
+                        <a href="https://github.com/prakharagrawal26/" target="_blank" rel="noopener noreferrer" class="contact-link">github.com/prakharagrawal26</a>
+                    </div>
+                </div>
+
+                <!-- Optional: Add a contact form here later if needed -->
+                 <!--
+                 <div class="contact-form-container">
+                     <h3>Or Send Me a Message Directly</h3>
+                     <form id="contact-form">
+                         <div class="form-group">
+                             <label for="name">Name</label>
+                             <input type="text" id="name" name="name" required>
+                         </div>
+                         <div class="form-group">
+                            <label for="email">Email</label>
+                             <input type="email" id="email" name="email" required>
+                         </div>
+                         <div class="form-group">
+                             <label for="message">Message</label>
+                             <textarea id="message" name="message" rows="5" required></textarea>
+                         </div>
+                         <button type="submit" class="btn btn-primary">Send Message</button>
+                     </form>
+                 </div>
+                 -->
+
+            </div>
+         </section>
+    </main>
+
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/prakhar-agr/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/prakharagrawal26/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:aprakhar@iisc.ac.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p>© <span id="current-year"></span> Prakhar Agrawal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
