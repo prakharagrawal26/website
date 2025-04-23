@@ -103,5 +103,58 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+        // --- Modal for Access Request ---
+        const formModal = document.getElementById("formModal");
+        const closeBtn = document.querySelector(".form-close");
+        const lockIcons = document.querySelectorAll("span[onclick='openFormModal()']");
+    
+        function openFormModal() {
+            formModal.style.display = "block";
+        }
+    
+        function closeFormModal() {
+            formModal.style.display = "none";
+        }
+    
+        if (closeBtn) {
+            closeBtn.addEventListener("click", closeFormModal);
+        }
+    
+        if (lockIcons) {
+            lockIcons.forEach(icon => {
+                icon.addEventListener("click", openFormModal);
+            });
+        }
+    
+        window.addEventListener("click", function(event) {
+            if (event.target === formModal) {
+                closeFormModal();
+            }
+        });
+
+
+            // --- PDF Modal Logic ---
+        window.openPDFModal = function(pdfUrl) {
+            const modal = document.getElementById('pdfModal');
+            const iframe = document.getElementById('pdfViewer');
+            iframe.src = pdfUrl;
+            modal.style.display = 'block';
+        };
+
+        window.closePDFModal = function() {
+            const modal = document.getElementById('pdfModal');
+            const iframe = document.getElementById('pdfViewer');
+            modal.style.display = 'none';
+            iframe.src = ''; // clear the iframe
+        };
+
+        // Close modal when clicking outside the content
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('pdfModal');
+            if (event.target === modal) {
+                closePDFModal();
+            }
+        });
+
 
 });
